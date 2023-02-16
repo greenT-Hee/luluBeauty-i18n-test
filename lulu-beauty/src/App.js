@@ -1,7 +1,15 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import { Reset } from 'styled-reset';
+
 function App() {
   return (
-    <div className="App">
-    </div>
+    <BrowserRouter>
+    <Reset />
+    <Routes>
+      <Route exact path="/" element={<Home/>}/>
+    </Routes>
+   </BrowserRouter>
   );
 }
 
