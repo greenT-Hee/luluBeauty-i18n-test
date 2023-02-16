@@ -4,12 +4,12 @@ import { Reset } from 'styled-reset';
 
 function App() {
   return (
-    <BrowserRouter>
+  <BrowserRouter>
     <Reset />
     <Routes>
       <Route exact path="/" element={<Home/>}/>
     </Routes>
-   </BrowserRouter>
+  </BrowserRouter>
   );
 }
 

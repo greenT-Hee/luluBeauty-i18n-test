@@ -1,30 +1,33 @@
 import styled from "styled-components"
 import { useTranslation } from 'react-i18next'
-import { useState } from "react"
 
 const MenuBox = styled.ul`
-box-sizing: border-box;
+  box-sizing: border-box;
   position: absolute;
   width: 88px;
   right: 20px;
-  top: 75px;
+  top: 55px;
   background: #fff;
+  border-radius: 4px;
   box-shadow: 1px 1px 20px rgba(0,0,0,0.1);
 `
 const LangList = styled.li`
   width: 100%;
+  border-radius: 4px;
+
   &:hover {
     background: #12bd7e;
   }
   `
-
-const LangBtn = styled.button`
+  
+  const LangBtn = styled.button`
   width: 100%;
   border: none;
   background: none;
   padding: 8px 12px;
   color: #12bd7e;
   cursor: pointer;
+  font-weight: 700;
 
   &:hover {
     color: #fff;

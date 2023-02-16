@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import lipstick from '../assets/img/lipstick.jpg'
+import beauty from '../assets/img/beauty.jpg'
 import { withTranslation } from 'react-i18next';
 
 const ArticelStyle = styled.article`
@@ -24,7 +24,7 @@ const Content = ({t}) => {
   return (
     <ArticelStyle>
       <IntroTxt>{t('introduce')}</IntroTxt>
-      <ImgStyle src={lipstick} alt=""/>
+      <ImgStyle src={beauty} alt=""/>
     </ArticelStyle>
   )
 }
